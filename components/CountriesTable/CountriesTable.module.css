@@ -1,0 +1,87 @@
+* {
+    background-color: transparent !important;
+    color: inherit !important;
+    border-color: transparent !important;
+}
+
+.heading {
+    display: flex;
+    padding: 20px;
+}
+
+.heading button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.heading__flag, .flag{
+    flex: 1;
+    margin-right: 16px;
+}
+
+.heading__name,
+.heading__population,
+.heading__area,
+.heading__gini,
+.population,
+.area,
+.gini {
+
+    flex: 4;
+    color: var(--text-secondary);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading__name {
+    justify-content: center;
+
+}
+
+.heading__arrow {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.row {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--backgound-color-light);
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    box-shadow: var(--box-shadow);
+    font-weight: 500;
+    transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+
+.row:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+    flex: 4;
+    text-align: left;
+}
+
+
+.flag img {
+    border-radius: 2px;
+    width: 100%;
+}
+
+@media screen and (max-width:720px) {
+    .area, .heading__area, .gini, .heading__gini{
+        display: none;
+    }
+   
+}

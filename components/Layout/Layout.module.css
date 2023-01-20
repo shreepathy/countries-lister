@@ -1,0 +1,30 @@
+.container{
+    padding: 24px;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.themeSwitcher{
+    border: none;
+    background-color: transparent;
+    color: var(--text-secondary);
+    display: flex;
+    margin-left: 4px;
+    margin-bottom: 6px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+}
